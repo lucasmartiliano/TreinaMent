@@ -137,13 +137,18 @@ img {
     align-items: center;
     margin: 0 auto;
 }
-.adress, .contact, .socialmedia, .qrcode {
+.adress, .contact, .qrcode {
     height: 100px;
     width: 200px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.socialmedia a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
 .qrcode img {
     margin: auto;
