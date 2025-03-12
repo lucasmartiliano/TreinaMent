@@ -262,7 +262,7 @@ form button:hover {
             margin: 10px;
         }
         .destaque{
-            font-size: medium;
+            font-size: 16px;
         }
         .container {
             flex-direction: column;
