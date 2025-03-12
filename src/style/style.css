@@ -256,10 +256,13 @@ form button:hover {
     .footer-container {
         flex-direction: column;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 717px) {
         body {
             height: auto;
             margin: 10px;
+        }
+        .destaque{
+            font-size: medium;
         }
         .container {
             flex-direction: column;
