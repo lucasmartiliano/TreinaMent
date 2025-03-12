@@ -8,15 +8,21 @@ header, nav, main, aside, footer {
     display: flex;    
     margin: 3px;
     background-color: #ffffff;
+    
 }
 header {
     flex: 1 1 100vw;
-    height: 100px;
+    height: 60px;
     border-bottom: 2px solid #2d8d1a;
 }
 header #logo {
-    flex: 0 1 350px;
+    flex: 0 1 200px;
     background-color: #ffffff;
+}
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 #openMenu, #closeMenu {
     border: none;
@@ -43,7 +49,6 @@ nav a:hover {
 main {
     flex: 20 1 100vw;
     height: 100%;
-    border-bottom: 2px solid #2d8d1a;
     
 }
 aside {
@@ -117,6 +122,13 @@ img {
     height: 100%;
     object-fit: cover;
 }
+.slogan {
+    text-align: center;
+    background: #E6742E;
+    padding: 4px;
+    width: 100%;
+    border: 1px solid #2d8d1a;
+}
 .footer-container {
     display: flex;
     flex-wrap: warp;
@@ -125,28 +137,94 @@ img {
     align-items: center;
     margin: 0 auto;
 }
-.adress, .contact, .socialmedia {
+.adress, .contact, .socialmedia, .qrcode {
     height: 100px;
-    width: 100%;
+    width: 200px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.foco-curso {
-    width: 99vw;
-    height: 400px;
+.qrcode img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/*PAGINA CURSO*/
+
+.container-curso-info {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    font-size: 20px;
-    padding: 80px;
-    flex-direction: column;
-    background-image: url(../images/fundo-nome.jpg);
-    background-size: cover;
-    background-position: center;
+    margin: 0 auto 100px auto;
+}
+.img-curso-info img {
+    height: 500px;
+    width: 100%vw;
+    object-fit: contain;
+    object-position: center;
+}
+.text-curso-info {
+    width: 70%;
+    text-align: center;
+}
+.button-whats {
+    text-align: center;
+    padding: 4px;
+}
+a img {
+    height: 130px;
+}
+
+
+/*FORMS*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+form {
+    flex: 1;
+    padding: 50px;
+    margin-right: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+form label {
+    font-weight: bold;
+}
+form input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #28a745;
     color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #218838;
+}
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 717px) {
@@ -178,5 +256,23 @@ img {
     .footer-container {
         flex-direction: column;
     }
-
+    @media (max-width: 768px) {
+        body {
+            height: auto;
+            margin: 10px;
+        }
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            order: -1; /* Coloca a imagem acima do formulário */
+        }
+        form {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+    }
 }
