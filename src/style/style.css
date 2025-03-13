@@ -136,6 +136,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .adress, .contact, .qrcode {
     height: 100px;
@@ -186,6 +187,7 @@ a img {
 
 
 /*FORMS*/
+
 .container {
     display: flex;
     align-items: center;
@@ -230,6 +232,25 @@ form button:hover {
 .image-container img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+/*ABOUT ME*/
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 100px auto;
+}
+.container-about-cart {
+    margin: 40px;
+}
+.container-about-text {
+    width: 60%;
+    text-align: center;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 717px) {
