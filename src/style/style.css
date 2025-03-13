@@ -173,9 +173,13 @@ img {
     object-fit: contain;
     object-position: center;
 }
+.text-curso-apresent {
+    text-align: center;
+    margin: 40px;
+}
 .text-curso-info {
     width: 70%;
-    text-align: center;
+    text-align: justify;
 }
 .button-whats {
     text-align: center;
@@ -245,7 +249,8 @@ form button:hover {
     margin: 0 auto 100px auto;
 }
 .container-about-cart {
-    margin: 40px;
+    text-align: center;
+    margin: 30px;
 }
 .container-about-text {
     width: 60%;
